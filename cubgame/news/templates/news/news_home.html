@@ -1,0 +1,33 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Все отзывы{% endblock %}
+
+{% block content %}
+
+  <div class="button-wrapper">
+    <ul>
+    <a href="{% url 'create' %}"><button class="btn btn-secondary btn-lg btn-block"><i class="fas fa-plus-circle"></i>Добавить отзыв</button></a>
+        </ul>
+    </div>
+
+<div class="features">
+
+<h1 class="h1-news-home1">Отзывы по игре</h1>
+    {% if news %}
+        {% for el in news %}
+            <div class="alert alert-secondary">
+                <h3>{{ el.title}}</h3>
+
+                <p>Достоинство: {{ el.dost }}</p>
+                <p>Недостатки: {{ el.fault }}</p>
+                <p> Коментарии: {{ el.full_text|truncatechars:40 }}</p>
+                <p>Дата: {{ el.date }}</p>
+                <a href="{% url 'news-detail' el.id %}" class="btn btn-secondary btn-lg btn-block">Читать далее</a>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>Отзывов пока нет </p>
+    {% endif %}
+
+</div>
+{% endblock %}

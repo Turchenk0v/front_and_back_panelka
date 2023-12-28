@@ -1,0 +1,36 @@
+
+{% extends 'main/layout.html' %}
+
+
+{% block title %}Про нас{% endblock %}
+
+
+{% block content %}
+
+{% load static %}
+
+
+
+    <div class="Text">
+        <h1 class="col text-center">Наша команда</h1>
+<aside class="pon">
+        <span class="logo">Турчнков Александр - Fullstack devoloper</span>
+        <img src="{% static 'img/men2.png ' %}" width="80" height="90" alt="Лого">
+</aside>
+        <span class="logo">Пркопенков Артём - Fullstack devoloper</span>
+        <img src="{% static 'img/men3.png ' %}" width="80" height="90" alt="Лого">
+
+        <span class="logo">Катков Сергей - Designer and Front devoloper</span>
+        <img src="{% static 'img/Kot_prozrachniy.png ' %}" width="80" height="90" alt="Лого">
+
+    </div>
+
+    <div class="Text2">
+       <span class="logo1">Кузьмина Елизавета- Game Devoloper    </span>
+        <img src="{% static 'img/ledy1.png ' %}" width="80" height="90" alt="Лого">
+        <span class="logo1">Семёнов Владислав - Game devoloper    </span>
+        <img src="{% static 'img/tipok.png ' %}" width="80" height="90" alt="Лого">
+    </div>
+
+
+{% endblock %}

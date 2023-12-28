@@ -1,0 +1,51 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+<body>
+
+  <style>
+      body {background: url('https://sun9-39.userapi.com/impg/tZWg43kaEGpEyVyn3dKTCa7f44naZKDu7WHKXA/ekVKb1pHypw.jpg?size=1600x898&quality=96&sign=11065d553fa6f5bc2442b797180da5c7&type=album');}
+  </style>
+
+
+
+
+<aside>
+
+    <img src="{% static 'img/panelka_LOG.png ' %}" width="150" height="130" alt="Лого">
+
+    <ul class="nav justify-content-center">
+        <a href="{% url 'home' %}"><li><i class="fas fa-home"></i>Главная</li></a>
+        <a href="{% url 'about' %}"><li><i class="fas fa-address-card"></i>Наша команда</li></a>
+        <a href="{% url 'news_home' %}"><li><i class="fas  fa-newspaper"></i>Отзывы</li></a>
+        <a href="{% url 'link' %}"><li><i class="fas fa-paper-plane"></i>Ссылки</li></a>
+        {% if is_auth_user %}
+            <li><h5>Вы: {{ user.username }}</h5></li>
+            <a href="{% url 'logout' %}"><li>Выйти</li></a>
+        {% else %}
+            <a href="{% url 'login' %}"><li><h5>Войти в систему</h5></li></a>
+            <a href="{% url 'register' %}"><li><h5>Пройти регистрацию</h5></li></a>
+        {% endif %}
+
+    </ul>
+
+
+</aside>
+
+     <main>
+           {% block content %}
+           {% endblock %}
+     </main>
+
+</body>
+</html>

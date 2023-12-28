@@ -1,0 +1,143 @@
+
+
+aside .logo{
+color:#808080;
+font-weight:bold;
+
+}
+
+aside ul {list-style: none}
+aside ul li {
+color: #808080;
+margin-top:-110px;
+display: block;
+margin-left: 15px;
+margin-right: 15px;
+transition: transform .2s ease-out;
+}
+
+aside ul li:hover, aside ul a:hover{
+color: #ff4d5d;
+text-decoration: none;
+transform: scale(1.03);
+}
+
+
+main .features{
+ color: black;
+ text-align: center;
+ margin-top:100px;
+ width:100%;
+}
+main .features h1 {
+
+font-size: 50px;
+
+}
+
+main .features p {
+margin-top:300px;
+max-width: 700px; margin: 20px auto
+}
+
+main .features span{
+margin-top:300px;
+margin-left:1300px;
+max-width: 700px; margin: 20px auto
+}
+
+main .features div
+{
+margin-top:65px;
+
+}
+
+
+
+main .Text p{
+color: #808080;
+margin-top:50px;
+text-align: center;
+margin-right:700px;
+
+}
+
+main  .logo{
+color: #808080;
+margin-top:-100px;
+margin-left:550px;
+
+}
+
+main  .logo1{
+color:#808080;
+margin-top:-100px;
+margin-left:550px;
+}
+
+
+
+main .features p1 {
+margin-top:-100px;
+max-width: 700px; margin: 20px auto
+}
+
+.p1 {
+ font-size: 400%;
+}
+
+.alert-secondary{
+max-width: 500px; margin: 20px auto;
+
+}
+
+form{
+
+    max-width: 400px; margin: 10px auto;
+}
+
+
+
+.button-wrapper{
+display: block;
+margin-left: 1200px;
+margin-top: -115px;
+}
+
+.version-one{
+margin-top:10px;
+ font-size: 45px;
+ text-align: center;
+
+}
+
+.version-two{
+
+ margin-top:80px;
+ font-size: 45px;
+ text-align: center;
+
+}
+
+.p-link1{
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.div-link1{
+ margin-top: 70px;
+}
+
+.p-index1{
+ font-weight: normal;
+ font-style: oblique;
+font-size:18px;
+}
+
+.h1-news-home1{
+ margin-top: -50px;
+}
+
+
+
